@@ -30,8 +30,13 @@
 
         <!--At first I thought this button needed to be with the hNavBar, but then I placed it with vNavBar, 
             but then I looked at YT source code and I think it should be with the hNavBar-->
-        <button class="btn btn-info" type ="button" data-bs-toggle="collapse" 
-        data-bs-target="#vNavBar">Triple Lines</button>
+        <!--<button class="btn btn-info" type ="button" data-bs-toggle="collapse" 
+        data-bs-target="#vNavBar">Triple Lines</button>-->
+
+        <a class="btn btn-large" onclick="DoSomething('Trigger Collapse of Vertical Nav Bar')">
+          <!-- (This is incorrect but it's coming direct from Font Awesome....ok wait I think it's a version difference, think the syntax changed. yes I verified this, leaving so you can see my journey feel free to delete) <i class="fa-solid fa-bars" aria-hidden="true"></i>-->
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </a>
 
         <button type="button" class="btn btn-success">YouTube Logo</button>
 
@@ -44,6 +49,8 @@
         
         <button type="button" class="btn btn-success">Microphone</button>
         <button type="button" class="btn btn-success">Other Services</button>
+
+        <!--Evan I don't understand the class on line 53, it's different then what I'm finding on Font Awesome's website. See line 37 for what I found (what I found isn't visually working)-->
         <a class="btn btn-large" onclick="DoSomething('Settings Bitch')">
           <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
         </a>
@@ -77,19 +84,5 @@
           </div>
         </div>
     </div>
-    
-    <!--Example Direct From Bootstrap-->
-    <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-          Toggle width collapse
-        </button>
-      </p>
-      <div style="min-height: 120px;">
-        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-          <div class="card card-body" style="width: 300px;">
-            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
-          </div>
-        </div>
-      </div>
 </body>
 </html>
